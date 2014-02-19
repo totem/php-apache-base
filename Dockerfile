@@ -6,7 +6,7 @@ RUN apt-get install -y apache2 apache2-mpm-prefork apache2-utils libapache2-mod-
 RUN apt-get clean && rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/*
 
 RUN ln -s /etc/apache2/mods-available/rewrite.load /etc/apache2/mods-enabled/
-RUN ln -s /apache/etc2/mods-available/proxy.conf /etc/apache2/mods-enabled/
+RUN ln -s /etc/apache2/mods-available/proxy.conf /etc/apache2/mods-enabled/
 RUN ln -s /etc/apache2/mods-available/proxy_http.load /etc/apache2/mods-enabled/
 RUN ln -s /etc/apache2/mods-available/proxy.load /etc/apache2/mods-enabled/
 
